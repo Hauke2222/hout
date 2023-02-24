@@ -1,24 +1,24 @@
 <main>
 	<nav>
-		<a href="">winkel</a>
+		<!-- <a href="">winkel</a> -->
 		<span> | </span>
 		<a href="mailto:hauke222222@gmail.com">e-mail</a>
 	</nav>
 	<h1>Hout</h1>
 	<h2>Houtsnijwerk</h2>
 	<div class="grid-container">
-		<img src="IMG_7939.jpeg" alt="houten paard" />
-		<img src="IMG_7938.jpeg" alt="houten paard" />
-		<img src="IMG_7940.jpeg" alt="houten eland" />
-		<img src="IMG_7942.jpeg" alt="houten eland" />
-		<img src="IMG_7944.jpeg" alt="houten judo techniek" />
+		<img src="IMG_7939.jpg" loading="lazy" alt="houten paard" />
+		<img src="IMG_7938.jpg" loading="lazy" alt="houten paard" />
+		<img src="IMG_7940.jpg" loading="lazy" alt="houten eland" />
+		<img src="IMG_7942.jpg" loading="lazy" alt="houten eland" />
+		<img src="IMG_7944.jpg" loading="lazy" alt="houten judo techniek" />
 
-		<img src="/darktable_exported/IMG_2633.jpg" alt="houten eekhoorn" />
+		<img src="IMG_2633.jpg" loading="lazy" alt="houten eekhoorn" />
 	</div>
 	<h2>Overig</h2>
 	<div class="grid-container">
-		<img src="/darktable_exported/IMG_2635.jpg" alt="houten hamer" />
-		<img src="/darktable_exported/IMG_2638.jpg" alt="houten krukje" />
+		<img src="IMG_2635.jpg" loading="lazy" alt="houten hamer" />
+		<img src="IMG_2638.jpg" loading="lazy" alt="houten krukje" />
 	</div>
 </main>
 
@@ -29,9 +29,12 @@
 	}
 	img {
 		padding: 6px;
-		margin: auto 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		/* margin: auto 0; */
 		width: 250px;
-		height: 250px;
+		/* height: 250px; */
+		height: auto;
 		object-fit: contain;
 	}
 	.grid-container {
@@ -39,6 +42,12 @@
 		display: grid;
 		justify-items: center;
 		grid-template-columns: repeat(2, 1fr); /* creates 2 columns with equal width */
+	}
+	@media (max-width: 550px) {
+		/* … */
+		.grid-container {
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 
 	html {
