@@ -31,9 +31,7 @@
 		padding: 6px;
 		margin-top: 20px;
 		margin-bottom: 20px;
-		/* margin: auto 0; */
 		width: 250px;
-		/* height: 250px; */
 		height: auto;
 		object-fit: contain;
 	}
@@ -71,8 +69,7 @@
 	}
 
 	h1,
-	h2,
-	h3 {
+	h2 {
 		font-weight: 400;
 		line-height: 1;
 	}
@@ -88,13 +85,6 @@
 		margin-top: 2.1rem;
 		margin-bottom: 1rem;
 		font-size: 2.2rem;
-	}
-
-	h3 {
-		font-style: italic;
-		font-size: 1.7rem;
-		margin-top: 2rem;
-		margin-bottom: 1.4rem;
 	}
 
 	p {
