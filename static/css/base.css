@@ -19,10 +19,13 @@ nav {
 img {
     padding: 6px;
     margin-top: 20px;
-    margin-bottom: 20px;
     width: 250px;
     height: auto;
     object-fit: contain;
+}
+
+figcaption {
+    text-align: center;
 }
 
 .grid-container {
