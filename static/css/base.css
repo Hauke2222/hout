@@ -17,11 +17,17 @@ nav {
 }
 
 img {
-    padding: 6px;
+    border: 6px solid lightgrey;
     margin-top: 20px;
     width: 250px;
     height: auto;
     object-fit: contain;
+}
+
+@media (min-width: 970px) {
+    img {
+        width: 300px;
+    }
 }
 
 figcaption {
