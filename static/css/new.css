@@ -1,0 +1,31 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-container {
+    max-width: 1200px;
+    /* Adjust as per your requirements */
+    margin: 0 auto;
+}
+
+.site-header {
+    background-color: #f7f7f7;
+    /* Set header background color */
+    padding: 20px;
+    /* Add any other styles for the header */
+}
+
+.site-content {
+    padding: 20px;
+    /* Add any other styles for the main content */
+}
+
+.site-footer {
+    background-color: #f7f7f7;
+    /* Set footer background color */
+    padding: 20px;
+    /* Add any other styles for the footer */
+}
