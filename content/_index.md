@@ -1,4 +1,4 @@
 ---
-title: My first content file
+title: haukehout
 ---
 My first paragraph in Markdown
