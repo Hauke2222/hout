@@ -46,7 +46,9 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Generate Last Updated File
-        run: echo "$(date)" > data/last_updated.json
+        run: |
+          mkdir -p data
+          echo "$(date)" > data/last_updated.json
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
