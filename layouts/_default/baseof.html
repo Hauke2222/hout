@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "header.html" . }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    {{ $main := resources.Get "main.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $main.Permalink }}">
+</head>
+<body>
+    {{ block "main" . }}
+    {{ end }}
+    {{ partial "footer.html" . }}
+</body>
+</html>
