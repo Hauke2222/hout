@@ -119,3 +119,7 @@ ul:last-child li {
   display: inline;
   margin-right: 10px;
 }
+
+small {
+  text-align: center;
+}
