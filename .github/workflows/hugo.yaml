@@ -48,7 +48,7 @@ jobs:
       - name: Generate Last Updated File
         run: |
           mkdir -p data
-          echo "$(date)" > data/last_updated.json
+          echo '{"last_updated": "'"$(date --iso-8601=seconds)"'"}' > data/last_updated.json
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
