@@ -1,5 +1,13 @@
 <footer> 
     <iframe src="https://haukehout.substack.com/embed" width="480" height="150" style="background-color: #fffff8;" frameborder="0" scrolling="no"></iframe>
     <br>
-    <small>Laatste wijziging: {{ .Site.Data.last_updated }}</small>
+    <small>
+        Laatste wijziging: 
+        {{ with .Site.Data.last_updated.last_updated }}
+          {{ . | time.Format "January 2, 2006 at 3:04 PM" }}
+        {{ else }}
+          Unknown
+        {{ end }}
+      </small>
+      
 </footer>

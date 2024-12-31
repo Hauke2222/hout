@@ -10,6 +10,7 @@ body {
   font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
   color: #111;
 }
+
  footer{
   text-align: center;
   padding-top: 80px;
@@ -77,19 +78,6 @@ p {
   margin-bottom: 1.4rem;
 }
 
-header {
-  /* background-color: #f1f1f1; */
-  /* padding: 20px; */
-}
-
-
-
-h1 a {
-  text-decoration: none;
-  color: #333;
-}
-
-
 nav ul {
   list-style: none;
   margin: 0;
@@ -99,16 +87,6 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 10px;
-}
-
-
-
-nav ul li.current a {
-  font-weight: bold;
-}
-
-nav+nav {
-  margin-top: 10px;
 }
 
 ul:last-child {
