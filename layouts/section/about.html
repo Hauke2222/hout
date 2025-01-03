@@ -5,7 +5,20 @@
  <p>Op de basisschool (boerderijschool zijldijk) ben ik begonnen met houtbewerking. 
   Tijdens de les handenarbeid maakten we daar verschillende dingen van hout zoals handbogen, boomerang en bijvoorbeeld een kleine schildersezel. Op deze schildersezel heb ik voor het eerst figuren in hout gesneden.
 </p>
-<p>Op de middelbare school(Parcival college) heb ik ook les in houtbewerking gehad. Daar heb ik onderandere een flessenhamer, krukje en een canoe. Foto's komen binnenkort.</p>
-<p>Wordt vervolgd....</p>
+<p>Op de middelbare school(Parcival college) heb ik ook les in houtbewerking gehad. Daar heb ik onderandere een flessenhamer, krukje en een kano gemaakt.</p>
+<div class="grid-container">
+  {{ with .Site.GetPage "schoolwerkstukken" }}
+    {{ range .Resources.ByType "image" }}
+      {{ $img := .Fit "250x250" }}
+      {{ $largeImg := .Fit "750x750" }}
+      <figure>
+        <a href="{{ $largeImg.RelPermalink }}">
+          <img src="{{ $img.RelPermalink }}" alt="{{ .Name }}" loading="lazy">
+        </a>
+        <figcaption>{{ .Title | default "No caption available" }}</figcaption>
+      </figure>
+    {{ end }}
+  {{ end }}
+</div>
   </main>
   {{ end }}

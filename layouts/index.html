@@ -16,21 +16,6 @@
       {{ end }}
     </div>
     
-    <h2>Schoolwerkstukken</h2>
-    <div class="grid-container">
-      {{ with .Site.GetPage "schoolwerkstukken" }}
-        {{ range .Resources.ByType "image" }}
-          {{ $img := .Fit "250x250" }}
-          {{ $largeImg := .Fit "750x750" }}
-          <figure>
-            <a href="{{ $largeImg.RelPermalink }}">
-              <img src="{{ $img.RelPermalink }}" alt="{{ .Name }}" loading="lazy">
-            </a>
-            <figcaption>{{ .Title | default "No caption available" }}</figcaption>
-          </figure>
-        {{ end }}
-      {{ end }}
-    </div>
   </main>
 {{ end }}
 
