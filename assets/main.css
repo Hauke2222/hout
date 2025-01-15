@@ -109,3 +109,22 @@ small {
   gap: 15px; /* Space between image and text */
 }
 
+footer {
+  text-align: center;
+  padding: 20px 0; /* Add some spacing */
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.footer-icon svg {
+  transition: transform 0.2s ease-in-out; /* Add a hover effect */
+}
+
+.footer-icon svg:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
