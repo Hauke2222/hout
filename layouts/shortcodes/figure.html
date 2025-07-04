@@ -1,0 +1,10 @@
+{{ $image := .Page.Resources.GetMatch (printf "%s" .Get "src") }}
+{{ if $image }}
+  {{ $resized := $image.Fit "500x300" }}
+  <figure>
+    <img src="{{ $resized.RelPermalink }}" alt="{{ .Get "alt" }}" loading="lazy" />
+    <figcaption>{{ .Get "caption" }}</figcaption>
+  </figure>
+{{ else }}
+  <p>Afbeelding niet gevonden: {{ .Get "src" }}</p>
+{{ end }}
