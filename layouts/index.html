@@ -5,7 +5,7 @@
       {{ with .Site.GetPage "houtsnijwerk" }}
         {{ range .Resources.ByType "image" }}
           {{ $img := .Fit "250x250" }}
-          {{ $largeImg := .Fit "750x750" }}
+          {{ $largeImg := .Fit "850x850" }}
           <figure>
             <a href="{{ $largeImg.RelPermalink }}">
               <img src="{{ $img.RelPermalink }}" alt="{{ .Name }}" loading="lazy">
