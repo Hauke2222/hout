@@ -3,7 +3,7 @@
   <br>
   <div class="image-left">
     {{ with .Site.GetPage "images/foto" }}
-    {{ $image := index (.Resources.Match "foto.jpeg") 0 }}
+    {{ $image := index (.Resources.Match "foto.jpg") 0 }}
     {{ if $image }}
     {{ $resized := $image.Fit "50x50" }}
     <img src="{{ $resized.RelPermalink }}" alt="{{ $image.Name }}" loading="lazy">
@@ -11,14 +11,10 @@
     {{ end }}
     <h2>Hauke van der Mark</h2>
   </div>
-  <p>Op de basisschool (boerderijschool zijldijk) ben ik begonnen met houtbewerking.
-    Tijdens de les handenarbeid maakten we daar verschillende dingen van hout zoals handbogen, boomerang en bijvoorbeeld
-    een kleine schildersezel. Op deze schildersezel heb ik voor het eerst figuren in hout gesneden.
-  </p>
-  <p>Op de middelbare school(Parcival college) heb ik ook les in houtbewerking gehad. Daar heb ik onder andere een
-    flessenhamer, krukje en een kano gemaakt.</p>
   </div>
+  <h2>Schoolwerkstukken</h2>
   <div class="grid-container">
+  
     {{ with .Site.GetPage "schoolwerkstukken" }}
     {{ range .Resources.ByType "image" }}
     {{ $img := .Fit "250x250" }}
