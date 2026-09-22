@@ -4,7 +4,7 @@
     <div class="grid-container">
       {{ with .Site.GetPage "houtsnijwerk" }}
         {{ range .Resources.ByType "image" }}
-          {{ $img := .Fit "375x375" }}
+          {{ $img := .Fit "200x200" }}
           {{ $largeImg := .Fit "850x850" }}
           <figure>
             <a href="{{ $largeImg.RelPermalink }}">
