@@ -9,8 +9,8 @@
           <figure>
             <a href="{{ $largeImg.RelPermalink }}">
               <img src="{{ $img.RelPermalink }}" alt="{{ .Name }}" loading="lazy">
-            </a>
             <figcaption>{{ .Title | default "No caption available" }}</figcaption>
+            </a>
           </figure>
         {{ end }}
       {{ end }}
