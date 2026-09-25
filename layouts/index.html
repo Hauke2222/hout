@@ -8,14 +8,18 @@
           {{ $largeImg := .Fit "850x850" }}
           <figure>
             <a href="{{ $largeImg.RelPermalink }}">
-              <img src="{{ $img.RelPermalink }}" alt="{{ .Name }}" loading="lazy">
-            <figcaption>{{ .Title | default "No caption available" }}</figcaption>
+              <img src="{{ $img.RelPermalink }}"
+                   alt="{{ replace (replace .Name ".jpg" "") "-" " " | title }}"
+                   loading="lazy">
+
+              <figcaption>
+                {{ replace (replace .Name ".jpg" "") "-" " " | title }}
+              </figcaption>
             </a>
           </figure>
         {{ end }}
       {{ end }}
     </div>
-    
   </main>
 {{ end }}
 
